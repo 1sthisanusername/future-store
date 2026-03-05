@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(helmet());
 app.use(cors());
+app.set('trust proxy', 1); // Trust proxy for rate limiting
 app.use(express.json());
 app.use(express.static('public'));
 
