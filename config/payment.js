@@ -3,7 +3,7 @@ const paymentConfig = {
   // PayPal Configuration
   paypal: {
     clientId: process.env.PAYPAL_CLIENT_ID || 'AW0bhj2niAFuo6OUQAGzgqw-x60RqKRQzpVGuGRUY2cUTWe93M6nt8fsd-yw59367t7zjpmnKKktqtoW',
-    clientSecret: process.env.PAYPAL_CLIENT_SECRET || 'your_paypal_client_secret_here',
+    clientSecret: process.env.PAYPAL_CLIENT_SECRET || 'EBa2HO4FZ2kznU7zSMjDBIoI1Oir8favZ57xgoZ_PEVu8r7X6FoWCfmCuXHAmCujgdZ-QGY5bazy6Gbc',
     mode: process.env.NODE_ENV === 'production' ? 'live' : 'sandbox',
     currency: 'USD'
   },
