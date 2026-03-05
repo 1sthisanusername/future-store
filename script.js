@@ -581,4 +581,4 @@ function goHome() {
 
 function scrollToProducts() {
   document.getElementById('filterSection').scrollIntoView({behavior: 'smooth'});
-}
+}}
