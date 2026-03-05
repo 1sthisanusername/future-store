@@ -404,6 +404,7 @@ function addToCart(bookId) {
 function addToCartFromModal() {
   if (currentBookModal) {
     addToCartAPI(currentBookModal.id);
+  }
 }
 
 function updateCartCount() {
@@ -446,11 +447,11 @@ function displayCart() {
             <div class="cart-item-price">₹${item.price}</div>
           </div>
           <div class="cart-item-qty">
-            <button onclick="decreaseQty(${item.id})">−</button>
+            <button onclick="decreaseQty('${item.id}')">−</button>
             <span>${item.quantity}</span>
-            <button onclick="increaseQty(${item.id})">+</button>
+            <button onclick="increaseQty('${item.id}')">+</button>
           </div>
-          <button class="cart-item-remove" onclick="removeFromCart(${item.id})">Remove</button>
+          <button class="cart-item-remove" onclick="removeFromCart('${item.id}')">Remove</button>
         </div>
       `).join('')}
     </div>
@@ -603,4 +604,4 @@ function goHome() {
 
 function scrollToProducts() {
   document.getElementById('filterSection').scrollIntoView({behavior: 'smooth'});
-}}
+}
